@@ -1,117 +1,200 @@
-  <div class="container pb-5 mb-sm-1" style="position: relative; top: 200px">
-    <h2 class="text-center header-1">Devam Eden Projeler</h2>
-
-    <div class="row">
-      <div class="col-md-6 col-sm-8 pt-3">
-        <div class="card border-0">
-          <a
-            class="card-img-tiles"
-            
-          >
-            <div class="main-img">
-              <img
-                [src]="products.imageUrl"
-                alt="Clothing"
-                class="h-100"
-              />
-            </div>
-            <div class="thumblist">
-              <img
-              [src]="products_2.imageUrl"
-
-                alt="Clothing"
-              /><img
+<div class="container pb-5 mb-sm-1" style="position: relative; top: 200px">
+  <h2 class="text-center header-1">Devam Eden Projeler</h2>
+  <div class="row">
+    <div class="col-md-6 col-sm-12 pt-3">
+      <div class="card border-0">
+        <a class="card-img-tiles">
+          <div class="main-img">
+            <img [src]="products.imageUrl" alt="Clothing" class="h-100" />
+          </div>
+          <div class="thumblist">
+            <img [src]="products_2.imageUrl" alt="Clothing" /><img
               [src]="products_3.imageUrl"
-
-                alt="Clothing"
-              />
-            </div>
-          </a>
-          <div class="card-body border mt-n1 py-4 text-center">
-            <h2 class="h5 mb-1">Regnum Escana Bodrum</h2>
-            <span class="d-block mb-3 font-size-xs text-muted">
-              <span class="font-weight-semibold"></span
-            ></span>
+              alt="Clothing"
+            />
           </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-8 pt-3">
-        <div class="card border-0">
-          <a class="card-img-tiles" href="">
-            <div class="main-img">
-              <img
-                src="../assets/Completed-Projects/Marti-la.jpg"
-                alt="Clothing"
-                class="h-100"
-              />
-            </div>
-            <div class="thumblist">
-              <img
-                src="../assets/Completed-Projects/marti-la-2.jpg"
-                alt="Clothing"
-              /><img
-                src="../assets/Completed-Projects/marti-la-3.jpg"
-                alt="Clothing"
-              />
-            </div>
-          </a>
-          <div class="card-body border mt-n1 py-4 text-center">
-            <h2 class="h5 mb-1">MARTI La Perla Hotel Marmaris</h2>
-            <span class="d-block mb-3 font-size-xs text-muted"> </span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-8 pt-3">
-        <div class="card border-0">
-          <a class="card-img-tiles" href="">
-            <div class="main-img">
-              <img
-                src="../assets/Completed-Projects/manastır.jpg"
-                alt="Clothing"
-                class="h-100"
-              />
-            </div>
-            <div class="thumblist">
-              <img
-                src="../assets/Completed-Projects/manastır-2.jpg"
-                alt="Clothing"
-              /><img
-                src="../assets/Completed-Projects/manastır-3.jpg"
-                alt="Clothing"
-              />
-            </div>
-          </a>
-          <div class="card-body border mt-n1 py-4 text-center">
-            <h2 class="h5 mb-1">Manastır Hotel Bodrum</h2>
-            <span class="d-block mb-3 font-size-xs text-muted"> </span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-8 pt-3">
-        <div class="card border-0">
-          <a class="card-img-tiles" href="">
-            <div class="main-img">
-              <img
-                src="../assets/Completed-Projects/Soul-Of-Bodrum.jpg"
-                alt="Clothing"
-                class="h-100"
-              />
-            </div>
-            <div class="thumblist">
-              <img
-                src="../assets/Completed-Projects/soul_of_bodrum-2.jpg"
-                alt="Clothing"
-              /><img
-                src="../assets/Completed-Projects/soul_of_bodrum-3.jpg"
-                alt="Clothing"
-              />
-            </div>
-          </a>
-          <div class="card-body border mt-n1 py-4 text-center">
-            <h2 class="h5 mb-1">Soul Of Bodrum</h2>
-            <span class="d-block mb-3 font-size-xs text-muted"> </span>
-          </div>
+        </a>
+        <div class="card-body border mt-n1 py-4 text-center">
+          <h2 class="h5 mb-1">{{ products.name }}</h2>
+          <span class="d-block mb-3 font-size-xs text-muted">
+            <span class="font-weight-semibold"></span
+          ></span>
         </div>
       </div>
     </div>
+    <div class="col-md-6 col-sm-12 pt-3">
+      <div class="card border-0">
+        <a class="card-img-tiles" href="">
+          <div class="main-img">
+            <img [src]="products_4.imageUrl" alt="Clothing" class="h-100" />
+          </div>
+          <div class="thumblist">
+            <img [src]="products_5.imageUrl" alt="Clothing" /><img
+              [src]="products_6.imageUrl"
+              alt="Clothing"
+            />
+          </div>
+        </a>
+        <div class="card-body border mt-n1 py-4 text-center">
+          <h2 class="h5 mb-1">{{ products_4.name }}</h2>
+          <span class="d-block mb-3 font-size-xs text-muted"> </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 pt-3">
+      <div class="card border-0">
+        <a class="card-img-tiles" href="">
+          <div class="main-img">
+            <img [src]="products_7.imageUrl" alt="Clothing" class="h-100" />
+          </div>
+          <div class="thumblist">
+            <img [src]="products_8.imageUrl" alt="Clothing" /><img
+              [src]="products_9.imageUrl"
+              alt="Clothing"
+            />
+          </div>
+        </a>
+        <div class="card-body border mt-n1 py-4 text-center">
+          <h2 class="h5 mb-1">{{ products_7.name }}</h2>
+          <span class="d-block mb-3 font-size-xs text-muted"> </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 pt-3">
+      <div class="card border-0">
+        <a class="card-img-tiles" href="">
+          <div class="main-img">
+            <img [src]="products_10.imageUrl" alt="Clothing" class="h-100" />
+          </div>
+          <div class="thumblist">
+            <img [src]="products_11.imageUrl" alt="Clothing" /><img
+              [src]="products_12.imageUrl"
+              alt="Clothing"
+            />
+          </div>
+        </a>
+        <div class="card-body border mt-n1 py-4 text-center">
+          <h2 class="h5 mb-1">{{ products_10.name }}</h2>
+          <span class="d-block mb-3 font-size-xs text-muted"> </span>
+        </div>
+      </div>
+    </div>
+    <!-- Accordion -->
+    <!-- <div class="accordion" id="accordionExample">
+      <div class="">
+        <h2 class="" id="headingOne">
+          <button
+            class="btn btn-outline-primary mt-3 mb-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Daha Fazla...
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body p-0 m-0">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 pt-3">
+                <div class="card border-0">
+                  <a class="card-img-tiles" href="">
+                    <div class="main-img">
+                      <img [src]="product_13.imageUrl" alt="Clothing" class="h-100" />
+                    </div>
+                    <div class="thumblist">
+                      <img [src]="product_14.imageUrl" alt="Clothing" /><img
+                        [src]="product_15.imageUrl"
+                        alt="Clothing"
+                      />
+                    </div>
+                  </a>
+                  <div class="card-body border mt-n1 py-4 text-center">
+                    <h2 class="h5 mb-1">{{ product_13.name }}</h2>
+                    <span class="d-block mb-3 font-size-xs text-muted"> </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 pt-3">
+                <div class="card border-0">
+                  <a class="card-img-tiles" href="">
+                    <div class="main-img">
+                      <img [src]="product_16.imageUrl" alt="Clothing" class="h-100" />
+                    </div>
+                    <div class="thumblist">
+                      <img [src]="product_17.imageUrl" alt="Clothing" /><img
+                        [src]="product_18.imageUrl"
+                        alt="Clothing"
+                      />
+                    </div>
+                  </a>
+                  <div class="card-body border mt-n1 py-4 text-center">
+                    <h2 class="h5 mb-1">{{ product_16.name }}</h2>
+                    <span class="d-block mb-3 font-size-xs text-muted"> </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 pt-3">
+                <div class="card border-0">
+                  <a class="card-img-tiles" href="">
+                    <div class="main-img">
+                      <img [src]="product_19.imageUrl" alt="Clothing" class="h-100" />
+                    </div>
+                    <div class="thumblist">
+                      <img [src]="product_20.imageUrl" alt="Clothing" /><img
+                        [src]="product_21.imageUrl"
+                        alt="Clothing"
+                      />
+                    </div>
+                  </a>
+                  <div class="card-body border mt-n1 py-4 text-center">
+                    <h2 class="h5 mb-1">{{ product_19.name }}</h2>
+                    <span class="d-block mb-3 font-size-xs text-muted"> </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 pt-3">
+                <div class="card border-0">
+                  <a class="card-img-tiles" href="">
+                    <div class="main-img">
+                      <img [src]="product_22.imageUrl" alt="Clothing" class="h-100" />
+                    </div>
+                    <div class="thumblist">
+                      <img [src]="product_23.imageUrl" alt="Clothing" /><img
+                        [src]="product_24.imageUrl"
+                        alt="Clothing"
+                      />
+                    </div>
+                  </a>
+                  <div class="card-body border mt-n1 py-4 text-center">
+                    <h2 class="h5 mb-1">{{ product_22.name }}</h2>
+                    <span class="d-block mb-3 font-size-xs text-muted"> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Accordion -->
   </div>
+  <div class="container mt-5">
+    <footer class="">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ana Sayfa</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Vizyon & Misyon</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ürünler</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Blog</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Bize Ulaşın</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2021 Company, Inc</p>
+    </footer>
+  </div>
+</div>

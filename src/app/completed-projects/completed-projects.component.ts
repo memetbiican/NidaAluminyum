@@ -46,4 +46,12 @@ export class CompletedProjectsComponent implements OnInit {
   product_22: Product = this.model.getproductByid(22);
   product_23: Product = this.model.getproductByid(23);
   product_24: Product = this.model.getproductByid(24);
+  // other product
+  product_25: Product = this.model.getproductByid(25);
+  product_26: Product = this.model.getproductByid(26);
+  product_27: Product = this.model.getproductByid(27);
+  // other product
+  product_28: Product = this.model.getproductByid(28);
+  product_29: Product = this.model.getproductByid(29);
+  product_30: Product = this.model.getproductByid(30);
 }

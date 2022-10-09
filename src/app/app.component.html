@@ -15,25 +15,51 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div
-      class="offcanvas offcanvas-end navbar-collapse"
-      tabindex="1"
+      class="offcanvas offcanvas-end navbar-collapse offcanvas-2"
+      tabindex="-1"
       aria-label="Close"
       id="navbarTogglerDemo03"
+      aria-modal="true"
+      role="dialog"
     >
-      <div class="offcanvas-body  navbar-collapse">
-        <ul class="navbar-nav d-flex align-content-start flex-wrap pe-1">
+      <div class="offcanvas-body navbar-collapse">
+        <div class="off-canvas-header">
+          <button
+            type="button"
+            class="btn-close btn-close-dark float-end"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <ul class="navbar-nav d-flex align-content-start flex-wrap pe-1 pt-4">
           <li class="nav-item ms-3 borders">
             <a routerLink="Hakkımızda" class="nav-link text-light hov"
               ><i class="fa-solid fa-address-card me-2"></i>Hakkımızda</a
             >
           </li>
           <li class="nav-item ms-3 borders dropdown">
-            <a class="nav-link text-light hov dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            <a
+              class="nav-link text-light hov dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
               >Projeler</a
             >
             <ul class="dropdown-menu dropdown-menu-light">
-              <li class="p-2"><a routerLink="Tamamlanmış-Projeler" class="dropdown-item text-success" href="#">Tamamlanan Projeler</a></li>
-              <li class="p-2"><a routerLink="Projeler" class="dropdown-item" href="#">Devam Eden Projeler</a></li>
+              <li class="p-2">
+                <a
+                  routerLink="Tamamlanmış-Projeler"
+                  class="dropdown-item text-success"
+                  href="#"
+                  >Tamamlanan Projeler</a
+                >
+              </li>
+              <li class="p-2">
+                <a routerLink="Projeler" class="dropdown-item" href="#"
+                  >Devam Eden Projeler</a
+                >
+              </li>
             </ul>
           </li>
           <li class="nav-item ms-3 borders">

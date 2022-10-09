@@ -1,5 +1,11 @@
 body {
-  background: linear-gradient(-45deg, rgba(128, 128, 128, 0.745),#246196d4, rgba(128, 128, 128, 0.461),  #ffff);
+  background: linear-gradient(
+    -45deg,
+    rgba(128, 128, 128, 0.745),
+    #246196d4,
+    rgba(128, 128, 128, 0.461),
+    #ffff
+  );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 150vh;
@@ -10,7 +16,6 @@ a {
 nav {
   position: fixed top;
   margin-bottom: 50px !important;
-
 }
 
 @keyframes gradient {
@@ -62,11 +67,26 @@ nav {
   top: 100vh;
 }
 
-
 .footer {
   position: sticky;
   left: 205vh;
   top: 25vh;
+}
+/* Responsive Design */
 
-  
+@media only screen and (max-width: 1910px)  {
+  body {
+    height: 200vh;
+  }
+  .about-article,.about-article-2{
+    font-size: 2.2vh;
+  }
+}
+@media only screen and (max-width: 1300px)  {
+  body {
+    height: 300vh;
+  }
+  .about-article,.about-article-2{
+    font-size: 1.5vh;
+  }
 }

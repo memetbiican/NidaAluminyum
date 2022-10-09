@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProjectsComponent } from './projects/projects.component';
 import { CompletedProjectsComponent } from './completed-projects/completed-projects.component';
 
+
 const appRoutes: Routes=[
   {path:"", component: HomeComponent},
   {path:"NidaAluminyum", component: HomeComponent},
@@ -28,9 +29,12 @@ const appRoutes: Routes=[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -34,6 +34,19 @@
   
   
   /* Responsive Desk */
+  @media only screen and (max-width: 767px){
+    .home-box{
+      width: 35vh !important;
+      height: 35vh !important;
+      top: 0;
+    bottom: 10vh !important;
+    }
+    .header-1,.header-2{
+      font-size: 2vh !important;
+    }
+    
+    
+  }
   
   @media only screen and (max-width: 991px) {
     .products .products-1 {
@@ -49,11 +62,11 @@
   /* Headers */
   
   .header-1 {
-    font-size: 30px;
+    font-size: 3vh;
     font-family: "Oswald", sans-serif;
   }
   .header-2 {
-    font-size: 22px;
+    font-size: 2.2vh;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
   }
@@ -130,6 +143,9 @@
   }
   
   /* Section Desk */
+  .car-img-top{
+    height: 45vh;
+  }
   
   .hoving:hover {
     -webkit-box-shadow: 6px 3px 33px 1px rgba(0, 0, 0, 0.38);

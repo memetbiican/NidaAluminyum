@@ -36,6 +36,14 @@ export class SimpleDataSource {
       new Product(22, 'İasos Dreams Bodrum', '', '../assets/Completed-Projects/iasos.jpg'),
       new Product(23, '', '', '../assets/Completed-Projects/iasos-2.jpg'),
       new Product(24, '', '', '../assets/Completed-Projects/iasos-3.jpg'),
+      // other project
+      new Product(25, 'Seba Taş Evler', '', '../assets/Completed-Projects/seba-tas.jpg'),
+      new Product(26, '', '', '../assets/Completed-Projects/seba-tas-2.jpg'),
+      new Product(27, '', '', '../assets/Completed-Projects/seba-tas-3.jpg'),
+      // other project
+      new Product(28, 'Castle Rock Bodrum', '', '../assets/Completed-Projects/castle-rock.jpg'),
+      new Product(29, '', '', '../assets/Completed-Projects/castle-rock-2.jpg'),
+      new Product(30, '', '', '../assets/Completed-Projects/castle-rock-3.jpg'),
     );
   }
   

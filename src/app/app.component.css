@@ -1,5 +1,7 @@
 /* General Desk  */
-
+body {
+  font-size: 3vh;
+}
 * {
   box-sizing: border-box;
 }
@@ -32,6 +34,12 @@ li {
 
 /* Responsive Desk */
 
+@media only screen and (min-width: 1px) {
+  .btn-close-dark {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .products .products-1 {
     float: left;
@@ -46,6 +54,15 @@ li {
   }
   .bar {
     background-color: white !important;
+  }
+  .btn-close-dark {
+    display: block;
+  }
+  .offcanvas-2 {
+    width: 35vh;
+  }
+  nav ul li {
+    padding-left: 2vh !important;
   }
 }
 
@@ -148,5 +165,3 @@ li {
 .modal-img-size {
   max-width: 800px;
 }
-
-

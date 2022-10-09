@@ -20,5 +20,17 @@ export class ProjectsComponent implements OnInit {
   products: Product_2= this.model_2.getProductsByid_2(1)
   products_2: Product_2= this.model_2.getProductsByid_2(2)
   products_3: Product_2= this.model_2.getProductsByid_2(3)
+  //Other Product
+  products_4: Product_2= this.model_2.getProductsByid_2(4)
+  products_5: Product_2= this.model_2.getProductsByid_2(5)
+  products_6: Product_2= this.model_2.getProductsByid_2(6)
+  //Other Product
+  products_7: Product_2= this.model_2.getProductsByid_2(7)
+  products_8: Product_2= this.model_2.getProductsByid_2(8)
+  products_9: Product_2= this.model_2.getProductsByid_2(9)
+  //Other Product
+  products_10: Product_2= this.model_2.getProductsByid_2(10)
+  products_11: Product_2= this.model_2.getProductsByid_2(11)
+  products_12: Product_2= this.model_2.getProductsByid_2(12)
 
 }
