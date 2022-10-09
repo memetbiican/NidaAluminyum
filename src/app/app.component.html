@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg bg-light" id="nav-list">
-  <a class="navbar-brand ms-4 mb-4" href=""
+  <a class="navbar-brand ms-4 mb-4" routerLink="NidaAluminyum"
     ><img id="logo" src="../assets/logoN.jpg" alt="Logo"
   /></a>
   <div>
     <button
-      class="navbar-toggler me-3"
+      class="navbar-toggler me-3 bar"
       type="button"
       data-bs-toggle="offcanvas"
       data-bs-target="#navbarTogglerDemo03"
@@ -20,24 +20,34 @@
       aria-label="Close"
       id="navbarTogglerDemo03"
     >
-      <div class="offcanvas-body">
+      <div class="offcanvas-body  navbar-collapse">
         <ul class="navbar-nav d-flex align-content-start flex-wrap pe-1">
           <li class="nav-item ms-3 borders">
-            <a href="" class="nav-link text-light hov"
+            <a routerLink="Hakkımızda" class="nav-link text-light hov"
               ><i class="fa-solid fa-address-card me-2"></i>Hakkımızda</a
             >
           </li>
-          <li class="nav-item ms-3 borders ">
-            <a href="" class="nav-link text-light hov">Projeler</a>
+          <li class="nav-item ms-3 borders dropdown">
+            <a class="nav-link text-light hov dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              >Projeler</a
+            >
+            <ul class="dropdown-menu dropdown-menu-light">
+              <li class="p-2"><a routerLink="Tamamlanmış-Projeler" class="dropdown-item text-success" href="#">Tamamlanan Projeler</a></li>
+              <li class="p-2"><a routerLink="Projeler" class="dropdown-item" href="#">Devam Eden Projeler</a></li>
+            </ul>
           </li>
-          <li class="nav-item ms-3 borders"><a href="" class="nav-link text-light hov">Ürünler</a></li>
+          <li class="nav-item ms-3 borders">
+            <a href="" class="nav-link text-light hov">Ürünler</a>
+          </li>
           <li class="nav-item ms-3 borders">
             <a href="" class="nav-link text-light hov">Vizyon&Misyon</a>
           </li>
           <li class="nav-item ms-3 borders">
-            <a href="" class="nav-link text-light hov">Sıkça Sorulan Sorular</a>
+            <a href="" class="nav-link text-light hov">Bize Ulaşın</a>
           </li>
-          <li class="nav-item ms-3 borders "><a href="" class="nav-link text-light hov">Blog</a></li>
+          <li class="nav-item ms-3 borders">
+            <a href="" class="nav-link text-light hov">Blog</a>
+          </li>
           <li
             class="nav-item fs-2 ms-3 borders"
             style="font-family: 'Ms Madi', cursive"
@@ -51,245 +61,4 @@
     </div>
   </div>
 </nav>
-<main>
-  <div class="container-fluid home p-0">
-    <video
-      class="home-video"
-      src="http://hbg.com.tr/web/assets/img/hbg_video.mp4"
-      loop=""
-      preload="true"
-      playsinline=""
-      muted=""
-      autoplay="autoplay"
-    ></video>
-    <div class="video-filter"></div>
-  </div>
-  <div class="home-box">
-    <div class="row m-0">
-      <div class="col-12 header-1">Nida Alüminyum İnşaat Sanayi</div>
-      <div class="col-12 header-2">
-        Güncel konularımız hakkında bilgi edinin, inşaat profesyonellerinin
-        düşünme ve çalışma şekillerine ilişkin içgörülerden yararlanın ve Nida
-        Alüminyum ortaklarının ürünlerinin kullanıldığı projeleri keşfedin.
-        <br />
-        <br />
-        İlham alın!
-      </div>
-    </div>
-  </div>
-</main>
-<section class="p-4">
-  <h2 class="header-3">Güncel Projeler</h2>
-  <div class="row mb-3">
-    <div class="col-lg-4">
-      <a href="../assets/Render-Projects/render-1.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        <div class="card text-dark hoving">
-          <img
-            class="car-img-top"
-            src="../assets/Render-Projects/render-1.jpg"
-            alt="Sky - Fullscreen Lightbox"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Bodrum Pera</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Odio, a!
-            </p>
-          </div>
-        </div></a>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-poisiton">
-                <img class="" src="../assets/Render-Projects/render-1.jpg" alt="">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        </div>
-    </div>
-    <div class="col-lg-4">
-      <a href="../assets/Render-Projects/render-2.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
-        <div class="card text-dark hoving">
-          <img
-            class="car-img-top"
-            src="../assets/Render-Projects/render-2.jpg"
-            alt="Sky - Fullscreen Lightbox"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Bodrum Pera</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Odio, a!
-            </p>
-          </div>
-        </div></a>
-        <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-poisiton">
-                <img class="modal-img-size" src="../assets/Render-Projects/render-2.jpg" alt="">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        </div>
-    </div>
-    <div class="col-lg-4">
-      <a href="../assets/Render-Projects/render-3.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal-3">
-        <div class="card text-dark hoving">
-          <img
-            class="car-img-top"
-            src="../assets/Render-Projects/render-3.jpg"
-            alt="Sky - Fullscreen Lightbox"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Bodrum Pera</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Odio, a!
-            </p>
-          </div>
-        </div></a>
-        <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-poisiton">
-                <img class="" style="width: 900px;" src="../assets/Render-Projects/render-3.jpg" alt="">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-4">
-      <a href="../assets/Render-Projects/render-4.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal-4">
-        <div class="card text-dark hoving">
-          <img
-            class="car-img-top"
-            src="../assets/Render-Projects/render-4.jpg"
-            alt="Sky - Fullscreen Lightbox"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Bodrum Pera</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Odio, a!
-            </p>
-          </div>
-        </div></a>
-        <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-poisiton">
-                <img class="ms-5" src="../assets/Render-Projects/render-4.jpg" alt="">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        </div>
-    </div>
-    <div class="col-lg-4">
-      <a href="../assets/Render-Projects/render-5.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal-5">
-        <div class="card text-dark hoving">
-          <img
-            class="car-img-top"
-            src="../assets/Render-Projects/render-5.jpg"
-            alt="Sky - Fullscreen Lightbox"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Bodrum Pera</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Odio, a!
-            </p>
-          </div>
-        </div></a>
-        <div class="modal fade" id="exampleModal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-poisiton">
-                <img class="modal-img-size" src="../assets/Render-Projects/render-5.jpg" alt="">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        </div>
-    </div>
-    <div class="col-lg-4">
-      <a href="../assets/Render-Projects/render-6.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal-6">
-        <div class="card text-dark hoving">
-          <img
-            class="car-img-top"
-            src="../assets/Render-Projects/render-6.jpg"
-            alt="Sky - Fullscreen Lightbox"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Bodrum Pera</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Odio, a!
-            </p>
-          </div>
-        </div></a>
-        <div class="modal fade" id="exampleModal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-poisiton">
-                <img class="modal-img-size" src="../assets/Render-Projects/render-6.jpg" alt="">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
-<footer class="footer mt-2">
-  <div class="container">
-    <div class="row text-style">
-      <div class="col-lg-3 products">
-        <ul>
-          <li>
-            <a href=""><h5 class="text-primary">Ürünler</h5></a>
-          </li>
-          <li class="fs-5">
-            <a class="text-dark products-1 ps-0" href="">Pencereler</a>
-          </li>
-          <li class="fs-5">
-            <a class="text-dark products-1" href="">Panel Kapılar</a>
-          </li>
-          <li class="fs-5">
-            <a class="text-dark products-1" href=""> Sürme Kapılar</a>
-          </li>
-          <li class="fs-5 products-1">
-            <a class="text-dark" href=""> Katlanır Sistem</a>
-          </li>
-          <li class="fs-5">
-            <a class="text-dark products-1 ps-0" href="">Aydınlatma</a>
-          </li>
-          <li class="fs-5">
-            <a class="text-dark products-1" href="">Giydirme Cephe</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-3">
-        <ul>
-          <li>
-            <a href=""><h5 class="text-primary">Tamamlanmış Projeler</h5></a>
-          </li>
-          <li class="fs-5"><a href="" class="text-dark"> Soul of Bodrum</a></li>
-          <li class="fs-5"><a href="" class="text-dark">Regnum Carya</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3">
-        <ul>
-          <li>
-            <a href=""><h5 class="text-primary">İletişim</h5></a>
-          </li>
-          <li class="fs-5">
-            <address>
-              <i class="fa-solid fa-location-dot me-2"></i> Konacık, Atatürk
-              Blv. no:293 b D:2, 48400 Bodrum/Muğla
-            </address>
-          </li>
-          <li>
-            <i class="fa-solid fa-phone me-2"></i
-            ><a href="" class="text-dark fs-5">0546 850 65 79</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-3">
-        <ul>
-          <li>
-            <a href=""><h5 class="text-primary">Diğer Alanlar</h5></a>
-          </li>
-          <li class="fs-5">
-            <i class="fa-solid fa-pen-nib me-2"></i
-            ><a href="" class="text-dark">Nida Tasarım</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
+<router-outlet></router-outlet>

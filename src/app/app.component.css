@@ -11,8 +11,6 @@ nav {
   top: 0;
   z-index: 9999;
   width: 100%;
-  /* border-bottom: 5px solid rgba(0, 0, 255, 0.491); */
- 
 }
 
 main {
@@ -32,7 +30,6 @@ li {
   list-style: none;
 }
 
-
 /* Responsive Desk */
 
 @media only screen and (max-width: 991px) {
@@ -42,6 +39,13 @@ li {
   }
   .borders {
     border-bottom: 1px solid rgba(211, 211, 211, 0.397);
+  }
+
+  .navbar li a {
+    color: rgba(0, 0, 0, 0.452) !important;
+  }
+  .bar {
+    background-color: white !important;
   }
 }
 
@@ -89,13 +93,10 @@ li {
   padding-left: 90px;
 }
 
-.hov:hover{
+.hov:hover {
   font-size: 2.7vh;
-  transition: all 0.5s ease-in-out
+  transition: all 0.5s ease-in-out;
 }
-
-
-
 
 /* Main Desk  */
 
@@ -144,20 +145,8 @@ li {
   left: -180px;
 }
 
-.modal-img-size{
+.modal-img-size {
   max-width: 800px;
 }
 
-/* Footer Desk */
 
-.footer {
-  border-top: 4px solid blue;
-  padding-top: 4vh;
-  margin: auto;
-  background-color: rgba(238, 235, 235, 0.048);
-}
-
-.footer a:hover {
-  font-size: 2.5vh;
-  color: rgba(0, 0, 255, 0.646) !important;
-}
