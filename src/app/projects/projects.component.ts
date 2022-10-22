@@ -32,5 +32,9 @@ export class ProjectsComponent implements OnInit {
   products_10: Product_2= this.model_2.getProductsByid_2(10)
   products_11: Product_2= this.model_2.getProductsByid_2(11)
   products_12: Product_2= this.model_2.getProductsByid_2(12)
+    //Other Product
+    products_13: Product_2= this.model_2.getProductsByid_2(13)
+    products_14: Product_2= this.model_2.getProductsByid_2(14)
+    products_15: Product_2= this.model_2.getProductsByid_2(15)
 
 }

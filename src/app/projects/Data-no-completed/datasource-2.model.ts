@@ -20,6 +20,10 @@ export class SimpleDataSource_2 {
         new Product_2(10, 'Seba | Gölköy ', '', '../assets/Ongoing-projects/seba.jpg'),
         new Product_2(11, '', '', '../assets/Ongoing-projects/seba-2.jpg'),
         new Product_2(12, '', '', '../assets/Ongoing-projects/seba-3.jpg'),
+         //Other Product
+         new Product_2(13, 'Kaya Palazzo Uludağ ', '', '../assets/Ongoing-projects/kaya.jpg'),
+         new Product_2(14, '', '', '../assets/Ongoing-projects/kaya-2.jpg'),
+         new Product_2(15, '', '', '../assets/Ongoing-projects/kaya-3.jpg'),
         
     );
 

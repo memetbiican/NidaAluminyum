@@ -1,238 +1,354 @@
 <main>
-    <div class="container-fluid home p-0">
-      <video
-        class="home-video"
-        src="/assets/aluminyum_video.mp4"
-        loop=""
-        preload="true"
-        playsinline=""
-        muted=""
-        autoplay="autoplay"
-      ></video>
-      <div class="video-filter"></div>
+  <div class="container-fluid home p-0">
+    <video
+      class="home-video"
+      src="/assets/aluminyum_video.mp4"
+      loop=""
+      preload="true"
+      playsinline=""
+      muted=""
+      autoplay="autoplay"
+      autoplay
+      loop
+      type="video/mp4"
+      muted
+      playsinline
+    ></video>
+    <div class="video-filter"></div>
+  </div>
+  <div class="home-box">
+    <div class="row m-0">
+      <div class="col-12 header-1">Nida Alüminyum İnşaat Sanayi</div>
+      <div class="col-12 header-2">
+        Güncel konularımız hakkında bilgi edinin, inşaat profesyonellerinin
+        düşünme ve çalışma şekillerine ilişkin içgörülerden yararlanın ve Nida
+        Alüminyum ortaklarının ürünlerinin kullanıldığı projeleri keşfedin.
+        <br />
+        <br />
+        İlham alın!
+      </div>
     </div>
-    <div class="home-box">
-      <div class="row m-0">
-        <div class="col-12 header-1">Nida Alüminyum İnşaat Sanayi</div>
-        <div class="col-12 header-2">
-          Güncel konularımız hakkında bilgi edinin, inşaat profesyonellerinin
-          düşünme ve çalışma şekillerine ilişkin içgörülerden yararlanın ve Nida
-          Alüminyum ortaklarının ürünlerinin kullanıldığı projeleri keşfedin.
-          <br />
-          <br />
-          İlham alın!
+  </div>
+</main>
+<section class="p-4">
+  <h2 class="header-3">Güncel Projeler</h2>
+  <div class="row mb-3">
+    <div class="col-lg-4 project">
+      <a
+        href="../assets/Ongoing-projects/boviera.jpg"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <div class="card text-dark hoving">
+          <img
+            [src]="products.imageUrl"
+            class="car-img-top"
+            alt="Sky - Fullscreen Lightbox"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ products.name }}</h5>
+            <p class="card-text"></p>
+          </div></div
+      ></a>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-poisiton">
+          <img class="" [src]="products.imageUrl" alt="" />
         </div>
       </div>
     </div>
-  </main>
-  <section class="p-4">
-    <h2 class="header-3">Güncel Projeler</h2>
-    <div class="row mb-3">
-      <div class="col-lg-4">
-        <a href="../assets/Render-Projects/render-1.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <div class="card text-dark hoving">
-            <img
-              class="car-img-top"
-              src="../assets/Render-Projects/render-1.jpg"
-              alt="Sky - Fullscreen Lightbox"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Bodrum Pera</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Odio, a!
-              </p>
-            </div>
-          </div></a>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-poisiton">
-                  <img class="" src="../assets/Render-Projects/render-1.jpg" alt="">
-                  
-            </div>
-          </div>
-      </div>
-      <div class="col-lg-4">
-        <a href="../assets/Render-Projects/render-2.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
-          <div class="card text-dark hoving">
-            <img
-              class="car-img-top"
-              src="../assets/Render-Projects/render-2.jpg"
-              alt="Sky - Fullscreen Lightbox"
-              
-            />
-            <div class="card-body">
-              <h5 class="card-title">Bodrum Pera</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Odio, a!
-              </p>
-            </div>
-          </div></a>
-          <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-poisiton">
-                  <img class="modal-img-size" src="../assets/Render-Projects/render-2.jpg" alt="">
-            </div>
-          </div>
-      </div>
-      <div class="col-lg-4">
-        <a href="../assets/Render-Projects/render-3.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal-3">
-          <div class="card text-dark hoving">
-            <img
-              class="car-img-top"
-              src="../assets/Render-Projects/render-3.jpg"
-              alt="Sky - Fullscreen Lightbox"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Bodrum Pera</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Odio, a!
-              </p>
-            </div>
-          </div></a>
-          <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-poisiton">
-                  <img class="" style="width: 900px;" src="../assets/Render-Projects/render-3.jpg" alt="">
-            </div>
-          </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4">
-        <a href="../assets/Render-Projects/render-4.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal-4">
-          <div class="card text-dark hoving">
-            <img
-              class="car-img-top"
-              src="../assets/Render-Projects/render-4.jpg"
-              alt="Sky - Fullscreen Lightbox"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Bodrum Pera</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Odio, a!
-              </p>
-            </div>
-          </div></a>
-          <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-poisiton">
-                  <img class="ms-5" src="../assets/Render-Projects/render-4.jpg" alt="">
-            </div>
-          </div>
-      </div>
-      <div class="col-lg-4">
-        <a href="../assets/Render-Projects/render-5.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal-5">
-          <div class="card text-dark hoving">
-            <img
-              class="car-img-top"
-              src="../assets/Render-Projects/render-5.jpg"
-              alt="Sky - Fullscreen Lightbox"
-              
-            />
-            <div class="card-body">
-              <h5 class="card-title">Bodrum Pera</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Odio, a!
-              </p>
-            </div>
-          </div></a>
-          <div class="modal fade" id="exampleModal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-poisiton">
-                  <img class="modal-img-size" src="../assets/Render-Projects/render-5.jpg" alt="">
-            </div>
-          </div>
-      </div>
-      <div class="col-lg-4">
-        <a href="../assets/Render-Projects/render-6.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal-6">
-          <div class="card text-dark hoving">
-            <img
-              class="car-img-top"
-              src="../assets/Render-Projects/render-6.jpg"
-              alt="Sky - Fullscreen Lightbox"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Bodrum Pera</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Odio, a!
-              </p>
-            </div>
-          </div></a>
-          <div class="modal fade" id="exampleModal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-poisiton">
-                  <img class="modal-img-size" src="../assets/Render-Projects/render-6.jpg" alt="">
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer mt-2">
-    <div class="container">
-      <div class="row text-style">
-        <div class="col-lg-3 products">
-          <ul>
-            <li>
-              <a href=""><h5 class="text-primary">Ürünler</h5></a>
-            </li>
-            <li class="fs-5">
-              <a class="text-dark products-1 ps-0" href="">Pencereler</a>
-            </li>
-            <li class="fs-5">
-              <a class="text-dark products-1" href="">Panel Kapılar</a>
-            </li>
-            <li class="fs-5">
-              <a class="text-dark products-1" href=""> Sürme Kapılar</a>
-            </li>
-            <li class="fs-5 products-1">
-              <a class="text-dark" href=""> Katlanır Sistem</a>
-            </li>
-            <li class="fs-5">
-              <a class="text-dark products-1 ps-0" href="">Aydınlatma</a>
-            </li>
-            <li class="fs-5">
-              <a class="text-dark products-1" href="">Giydirme Cephe</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3">
-          <ul>
-            <li>
-              <a href=""><h5 class="text-primary">Tamamlanmış Projeler</h5></a>
-            </li>
-            <li class="fs-5"><a href="" class="text-dark"> Soul of Bodrum</a></li>
-            <li class="fs-5"><a href="" class="text-dark">Regnum Carya</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3">
-          <ul>
-            <li>
-              <a href=""><h5 class="text-primary">İletişim</h5></a>
-            </li>
-            <li class="fs-5">
-              <address>
-                <i class="fa-solid fa-location-dot me-2"></i> Konacık, Atatürk
-                Blv. no:293 b D:2, 48400 Bodrum/Muğla
-              </address>
-            </li>
-            <li>
-              <i class="fa-solid fa-phone me-2"></i
-              ><a href="" class="text-dark fs-5">+90 (0546) 850 65 79</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3">
-          <ul>
-            <li>
-              <a href=""><h5 class="text-primary">Diğer Alanlar</h5></a>
-            </li>
-            <li class="fs-5">
-              <i class="fa-solid fa-pen-nib me-2"></i
-              ><a href="" class="text-dark">Nida Tasarım</a>
-            </li>
-          </ul>
+    <div class="col-lg-4 project">
+      <a
+        href="../assets/Ongoing-projects/golf.jpg"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal-2"
+      >
+        <div class="card text-dark hoving">
+          <img
+            class="car-img-top"
+            [src]="products_4.imageUrl"
+            alt="Sky - Fullscreen Lightbox"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ products_4.name }}</h5>
+            <p class="card-text"></p>
+          </div></div
+      ></a>
+      <div
+        class="modal fade ms-5"
+        id="exampleModal-2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-poisiton">
+          <img class="modal-img-size" [src]="products_4.imageUrl" alt="" />
         </div>
       </div>
     </div>
-  </footer>
-  
+    <div class="col-lg-4 project">
+      <a
+        href="../assets/Ongoing-projects/pier.jpg"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal-3"
+      >
+        <div class="card text-dark hoving">
+          <img
+            class="car-img-top"
+            [src]="products_7.imageUrl"
+            alt="Sky - Fullscreen Lightbox"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ products_7.name }}</h5>
+            <p class="card-text"></p>
+          </div></div
+      ></a>
+      <div
+        class="modal fade"
+        id="exampleModal-3"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-poisiton">
+          <img
+            class=""
+            style="width: 900px"
+            [src]="products_7.imageUrl"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 project">
+      <a
+        href="../assets/Ongoing-projects/pier.jpg"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal-4"
+      >
+        <div class="card text-dark hoving">
+          <img
+            class="car-img-top"
+            [src]="products_10.imageUrl"
+            alt="Sky - Fullscreen Lightbox"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ products_10.name }}</h5>
+            <p class="card-text"></p>
+          </div></div
+      ></a>
+      <div
+        class="modal fade"
+        id="exampleModal-4"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-poisiton">
+          <img
+            class="ms-3"
+            style="max-width: 170%"
+            [src]="products_10.imageUrl"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 project">
+      <a
+        href="../assets/Ongoing-Projects/kaya.jpg"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal-5"
+      >
+        <div class="card text-dark hoving">
+          <img
+            class="car-img-top"
+            [src]="products_14.imageUrl"
+            alt="Sky - Fullscreen Lightbox"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ products_13.name }}</h5>
+            <p class="card-text"></p>
+          </div></div
+      ></a>
+      <div
+        class="modal fade"
+        id="exampleModal-5"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-poisiton">
+          <img class="modal-img-size" [src]="products_14.imageUrl" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-lg-4 project">
+      <a
+        href="../assets/Render-Projects/render-6.jpg"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal-6"
+      >
+        <div class="card text-dark hoving">
+          <img
+            class="car-img-top"
+            src="../assets/Render-Projects/render-6.jpg"
+            alt="Sky - Fullscreen Lightbox"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Bodrum Pera</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Odio, a!
+            </p>
+          </div>
+        </div></a
+      >
+      <div
+        class="modal fade"
+        id="exampleModal-6"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-poisiton">
+          <img
+            class="modal-img-size"
+            src="../assets/Render-Projects/render-6.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+<section>
+  <div class="brands my-4">
+    <div class="d-flex flex-row flex-wrap">
+      <a
+        class="me-1"
+        target="_blank"
+        href="https://www.albertgenau.com/?gclid=Cj0KCQjwy5maBhDdARIsAMxrkw1cYevv5dCVarzWkdeukpADWxL5dTjovPk7_b3TMH-kyhLgeDrsJIkaAjwOEALw_wcB"
+        ><img src="../assets/Brands/albert.jpg" alt="partner-1"
+      /></a>
+      <a class="me-1" target="_blank" href="http://alfore.com.tr/"
+        ><img src="../assets/Brands/alfore.jpg" alt="partner-1"
+      /></a>
+      <a
+        class="me-1"
+        target="_blank"
+        href="https://www.alumil.com/turkey/homeowners"
+        ><img src="../assets/Brands/alumil.jpg" alt="partner-1"
+      /></a>
+      <a class="me-1" target="_blank" href="https://www.iqaluminyum.com/"
+        ><img src="../assets/Brands/iq-aluminyum.jpg" alt="partner-1"
+      /></a>
+      <a class="me-1" target="_blank" href="http://www.linearossa.eu/"
+        ><img src="../assets/Brands/linea.jpg" alt="partner-1"
+      /></a>
+      <a class="me-1" target="_blank" href="https://www.rehau.com/tr-tr"
+        ><img src="../assets/Brands/rehau.jpg" alt="partner-1"
+      /></a>
+      <a class="me-1" target="_blank" href="https://www.reynaers.com.tr/"
+        ><img src="../assets/Brands/reynaers.jpg" alt="partner-1"
+      /></a>
+      <a class="me-1" target="_blank" href="https://www.velux.com.tr/"
+        ><img src="../assets/Brands/velux.jpg" alt="partner-1"
+      /></a>
+    </div>
+  </div>
+</section>
+<footer class="footer mt-2">
+  <div class="container">
+    <div class="row text-style">
+      <div class="col-lg-3 products">
+        <ul>
+          <li>
+            <a href=""><h5 class="text-primary">Ürünler</h5></a>
+          </li>
+          <li class="fs-5">
+            <a class="text-dark products-1 ps-0" href="">Pencereler</a>
+          </li>
+          <li class="fs-5">
+            <a class="text-dark products-1" href="">Panel Kapılar</a>
+          </li>
+          <li class="fs-5">
+            <a class="text-dark products-1" href=""> Sürme Kapılar</a>
+          </li>
+          <li class="fs-5 products-1 none">
+            <a class="text-dark" href=""> Katlanır Sistem</a>
+          </li>
+          <li class="fs-5">
+            <a class="text-dark products-1 ps-0 none" href="">Aydınlatma</a>
+          </li>
+          <li class="fs-5">
+            <a class="text-dark products-1 none" href="">Giydirme Cephe</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul>
+          <li>
+            <a routerLink="/Tamamlanan-Projeler"
+              ><h5 class="text-primary">Tamamlanmış Projeler</h5></a
+            >
+          </li>
+          <li class="fs-5">
+            <a routerLink="/Tamamlanan-Projeler" class="text-dark">
+              Soul of Bodrum</a
+            >
+          </li>
+          <li class="fs-5">
+            <a routerLink="/Tamamlanan-Projeler" class="text-dark"
+              >Regnum Escana Bodrum</a
+            >
+          </li>
+          <li class="fs-5">
+            <a routerLink="/Tamamlanan-Projeler" class="text-dark"
+              >Daha Fazla...</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul>
+          <li>
+            <a routerLink="/Bize-Ulasın"
+              ><h5 class="text-primary">İletişim</h5></a
+            >
+          </li>
+          <li class="fs-5">
+            <address>
+              <i class="fa-solid fa-location-dot me-2"></i> Konacık, Atatürk
+              Blv. no:293 b D:2, 48400 Bodrum/Muğla
+            </address>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone me-2"></i
+            ><a href="tel: //+90 (0546) 850 65 79" class="text-dark fs-5"
+              >+90 (0546) 850 65 79</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul>
+          <li>
+            <a href=""><h5 class="text-primary">Diğer Alanlar</h5></a>
+          </li>
+          <li class="fs-5">
+            <i class="fa-solid fa-pen-nib me-2"></i
+            ><a href="" class="text-dark">Nida Tasarım</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

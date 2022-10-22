@@ -14,6 +14,9 @@ nav {
   z-index: 9999;
   width: 100%;
 }
+.navbar-group-1 {
+  padding-left: 15vh;
+}
 
 main {
   height: 85vh;
@@ -40,6 +43,7 @@ li {
   }
 }
 
+
 @media only screen and (max-width: 991px) {
   .products .products-1 {
     float: left;
@@ -65,6 +69,16 @@ li {
     padding-left: 2vh !important;
   }
 }
+
+@media only screen and (max-width: 1487px) {
+  .nav-link{
+    font-size: 2.4vh !important;
+  }
+  #nav-list-2{
+    padding-left: 0vh !important;
+  }
+}
+
 
 /* Headers */
 
@@ -113,6 +127,11 @@ li {
 .hov:hover {
   font-size: 2.7vh;
   transition: all 0.5s ease-in-out;
+}
+
+.nida-design{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
 }
 
 /* Main Desk  */

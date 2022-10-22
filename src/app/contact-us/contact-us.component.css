@@ -1,0 +1,96 @@
+/* General Desk */
+
+body {
+    background: linear-gradient(
+      -45deg,
+      rgba(128, 128, 128, 0.745),
+      #24619697,
+      rgba(128, 128, 128, 0.461),
+      #ffff
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 150vh;
+  }
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+form {
+    background-color: #233c4321;
+    
+}
+
+::placeholder {
+    color: gray;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: gray;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: gray;
+  }
+
+  label{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+/* Responsive Desk */
+
+@media only screen and (max-width: 768px) {
+ body {
+  height: 220vh;
+ }
+ .surname {
+  padding-top: 2vh;
+ }
+
+}
+
+
+
+/* Main Desk */
+
+.wrapper {
+
+    position: relative;
+    top: 28vh;
+}
+
+.form-in{
+    height: 8vh;
+    background-color: #FFFFFF;
+    color: gray;
+    border: none;
+}
+
+.footer {
+    margin-top: 10vh;
+}
+
+.upload:hover {
+color: #fff;
+cursor: pointer;
+}
+
+.disp{
+  display: none;
+}
+

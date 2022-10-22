@@ -29,13 +29,15 @@ nav {
     background-position: 0% 50%;
   }
 }
+
 .header {
   color: rgba(255, 255, 255, 0.686);
   position: absolute;
   top: 2vh;
-  left: 8vh;
+  left: 4.5vh;
   font-weight: 300;
   font-family: monospace;
+  font-size: 4vh;
 }
 
 .about {
@@ -50,18 +52,11 @@ nav {
   font-family: "Noto Sans Mono", monospace;
   font-weight: 200;
   font-size: 2.2vh;
-  padding-top: 4vh;
+  padding-top: 9vh !important;
   padding-left: 10vh;
   padding-right: 10vh;
 }
-.about-article-2 {
-  font-family: "Noto Sans Mono", monospace;
-  font-weight: 200;
-  font-size: 2.2vh;
-  padding-top: 2vh;
-  padding-left: 2.7vh;
-  padding-right: 2.7vh;
-}
+
 .dialog {
   position: relative;
   top: 100vh;
@@ -74,19 +69,27 @@ nav {
 }
 /* Responsive Design */
 
-@media only screen and (max-width: 1910px)  {
+@media only screen and (max-width: 1910px) {
   body {
-    height: 200vh;
+    height: 170vh;
   }
-  .about-article,.about-article-2{
-    font-size: 2.2vh;
+  .about-article,
+  .about-article-2 {
+    font-size: 2vh;
   }
 }
-@media only screen and (max-width: 1300px)  {
+@media only screen and (max-width: 1300px) {
   body {
-    height: 300vh;
+    height: 320vh;
   }
-  .about-article,.about-article-2{
+  .about-article,
+  .about-article-2 {
     font-size: 1.5vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 3vh !important;
+    text-align: left !important;
   }
 }
