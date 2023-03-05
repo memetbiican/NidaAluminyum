@@ -32,42 +32,25 @@ li {
 }
 
 /* Responsive Desk */
+@media only screen and (max-width: 1500px) {
+  footer a,
+  h5,
+  address {
+    font-size: 2.5vh !important;
+  }
+  .none {
+    display: none;
+  }
+  .home-box{
+    max-height: 50vh;
+  }
+}
 
-@media only screen and (max-width: 444px) {
-  .home-video {
-    display: none !important;
-  }
-  .home-box {
-    /* background-color: #253D44 !important; */
-    width: 15vh !important;
-    height: 15vh !important;
-    top: 10vh !important;
-    bottom: 10vh !important;
-  }
-  main {
-    background: url(http://www.nidaaluminyum.com/wp-content/uploads/2018/10/hzr-1024x430.jpg);
-    background-position: 20% 50% 50% 20%;
-    max-width: 100%;
-    height: 80vh;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .home-box {
-    width: 35vh !important;
-    height: 35vh !important;
-    top: 0;
-    bottom: 10vh !important;
-  }
-  .header-1,
-  .header-2 {
-    font-size: 2vh !important;
-  }
-}
 
 @media only screen and (max-width: 991px) {
   .home-box {
-    width: 50vh;
-    height: 55vh;
+    max-width: 50vh;
+    max-height: 50vh;
     top: 10vh;
     bottom: 10vh;
   }
@@ -81,19 +64,49 @@ li {
   .project {
     padding-top: 1.5vh;
   }
-  
+
 }
 
-@media only screen and (max-width: 1500px) {
-  footer a,
-  h5,
-  address {
-    font-size: 2.5vh !important;
+
+@media only screen and (max-width: 767px) {
+  .home-box {
+    width: 35vh !important;
+    height: 35vh !important;
+    top: 0;
+    bottom: 10vh !important;
   }
-  .none {
-    display: none;
+  .header-1,
+  .header-2 {
+    font-size: 1.5vh !important;
+
   }
 }
+
+
+
+@media only screen and (max-width: 444px) {
+  main {
+    background: url(http://www.nidaaluminyum.com/wp-content/uploads/2018/10/hzr-1024x430.jpg);
+    background-position: 20% 50% 50% 20%;
+    max-width: 100%;
+    height: 60vh;
+  }
+
+  .home-video {
+    display: none !important;
+  }
+  .home-box {
+    /* background-color: #253D44 !important; */
+    width: 25vh !important;
+    height: 25vh !important;
+
+  }
+
+
+}
+
+
+
 
 /* Headers */
 

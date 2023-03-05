@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-light" id="nav-list">
-  <a class="navbar-brand ms-4 mb-4" routerLink="NidaAluminyum"
-    ><img id="logo" src="../assets/logoN.jpg" alt="Logo"
+  <a class="navbar-brand ms-4 mb-4" routerLink="nidaaluminyum"
+    ><img id="logo" src="../assets/logoN.png" alt="Logo"
   /></a>
   <div class="navbar-group-1 mb-4" id="nav-list-2">
     <button
@@ -33,8 +33,8 @@
         </div>
         <ul class="navbar-nav d-flex align-content-start flex-wrap pe-1 pt-4">
           <li class="nav-item ms-3 borders">
-            <a routerLink="Hakkımızda" class="nav-link text-light hov"
-              ><i class="fa-solid fa-address-card me-2"></i>Hakkımızda</a
+            <a routerLink="hakkimizda" class="nav-link text-light hov"
+              ><i class="fa-solid fa-address-card "></i>Hakkımızda</a
             >
           </li>
           <li class="nav-item ms-3 borders dropdown">
@@ -49,21 +49,40 @@
             <ul class="dropdown-menu dropdown-menu-light">
               <li class="p-2">
                 <a
-                  routerLink="Tamamlanan-Projeler"
+                  routerLink="tamamlanan-projeler"
                   class="dropdown-item text-success"
                   href="#"
                   >Tamamlanan Projeler</a
                 >
               </li>
               <li class="p-2">
-                <a routerLink="Projeler" class="dropdown-item" href="#"
+                <a routerLink="projeler" class="dropdown-item" href="#"
                   >Devam Eden Projeler</a
                 >
               </li>
             </ul>
           </li>
-          <li class="nav-item ms-3 borders">
-            <a href="" class="nav-link text-light hov">Ürünler</a>
+
+          <li class="nav-item ms-3 borders dropdown">
+            <a
+              routerLink="urunler"
+              class="nav-link text-light hov dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Markalar</a
+            >
+            <ul class="dropdown-menu dropdown-menu-light">
+              <li class="p-2">
+                <a class="dropdown-item text-success" href="#"
+                  >Tamamlanan Projeler</a
+                >
+              </li>
+              <li class="p-2">
+                <a class="dropdown-item" href="#">Devam Eden Projeler</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item ms-3 borders">
             <a routerLink="vizyon-misyon" class="nav-link text-light hov"
@@ -71,7 +90,7 @@
             >
           </li>
           <li class="nav-item ms-3 borders">
-            <a routerLink="Bize-Ulasın" class="nav-link text-light hov"
+            <a routerLink="bize-ulasin" class="nav-link text-light hov"
               >Bize Ulaşın</a
             >
           </li>

@@ -16,7 +16,7 @@ main {
   background-position: 50% 20%;
   width: 100%;
   border-top: solid black 2px;
-  height: 35vh;
+  height: 30vh;
 
 }
 
@@ -27,8 +27,17 @@ main {
   margin-top: 25vh;
 }
 
+
+/* Responsive Desk */
+
 @media only screen and (max-width: 1350px) {
  main {
   top: 85%;
  }
   }
+
+@media only screen and (max-width: 768px) {
+    main {
+     top: 100%;
+    }
+     }

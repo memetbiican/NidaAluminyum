@@ -9,19 +9,18 @@ import { ProjectsComponent } from './projects/projects.component';
 import { CompletedProjectsComponent } from './completed-projects/completed-projects.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { VisionMissionComponent } from './vision-mission/vision-mission.component';
+import { ProductsComponent } from './products/products.component';
 
 
 const appRoutes: Routes=[
   {path:"", component: HomeComponent},
-  {path:"NidaAluminyum", component: HomeComponent},
-  {path:"Hakkımızda", component: AboutUsComponent},
-  {path:"Projeler", component: ProjectsComponent},
-  {path:"Tamamlanan-Projeler", component: CompletedProjectsComponent},
-  {path:"Bize-Ulasın", component: ContactUsComponent},
-  {path:"vizyon-misyon", component: VisionMissionComponent}
-
-
-
+  {path:"nidaaluminyum", component: HomeComponent},
+  {path:"hakkimizda", component: AboutUsComponent},
+  {path:"projeler", component: ProjectsComponent},
+  {path:"tamamlanan-projeler", component: CompletedProjectsComponent},
+  {path:"bize-ulasin", component: ContactUsComponent},
+  {path:"vizyon-misyon", component: VisionMissionComponent},
+  {path:"urunler", component: ProductsComponent}
 
 ]
 
@@ -33,7 +32,8 @@ const appRoutes: Routes=[
     ProjectsComponent,
     CompletedProjectsComponent,
     ContactUsComponent,
-    VisionMissionComponent
+    VisionMissionComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
